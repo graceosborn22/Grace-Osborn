@@ -1,0 +1,109 @@
+
+html{
+    background-color: black;
+    color: antiquewhite;
+    margin-left: 15px;
+}
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #5c3c06;
+    background-color: #fdf6e3;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    font-size: 0.8em;
+    background-color: #e8d8c3;
+}
+
+
+
+#nameheader{
+    text-align:center;
+}
+
+#personalinfo{
+    text-align: center;
+    
+}
+
+#personalinfo a{
+    color:antiquewhite;
+}
+
+h2{
+    font-size:xx-large;
+}
+
+h2.skills-icon::after {
+    content: " ";
+    background-image: url("skills.png");
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+h2.projects-icon::after{
+    content: " ";
+    background-image: url("projects.png");
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+
+}
+h2.experience-icon::after{
+    content: " ";
+    background-image: url("briefcase.png");
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+h2.leadership-icon::after{
+    content: " ";
+    background-image: url("work.png");
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}

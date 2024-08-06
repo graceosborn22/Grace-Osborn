@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#background-container {
+  background-image: url('photoofme.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: antiquewhite;
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+#Name {
+    position: absolute;
+    top: 56%;  /* adjust these percentage values */
+    left: 19%;  /* adjust these percentage values */
+    transform: translate(-50%, -50%);  /* this will center the element based on its own size */
+  }
+  
+#introParagraph {
+    position: absolute;
+    top: 67%;  /* adjust these percentage values */
+    left: 26%;  /* adjust these percentage values */
+    transform: translate(-50%, -50%);  /* this will center the element based on its own size */
+  }
+  
+  
+/* ... Your existing styles for #linkList and #vertical-nav ... */
+
+#vertical-nav {
+    list-style-type: none;
+    text-decoration: none;  /* removes underlining */
+    color: antiquewhite;  /* sets the text color to antique white */
+    /*background-color: #121212; */
+    padding: 5px;
+    display: block; /* Makes the entire list item clickable */
+      /* removes bullet points */
+    margin: 0;
+    padding: 0;
+  }
+
+#vertical-nav a {
+    text-decoration: none;  /* removes underlining */
+    color: antiquewhite;
+
+}
+
+#vertical-nav a:hover {
+    background-color: #808080;  /* Sets the background color to gray */
+    color: antiquewhite;  /* Keeps the text color antique white while hovering */
+  }
+  
+#visual {
+    font-size: small;
+    position: absolute;
+    top: 23%;  /* adjust these percentage values */
+    left: 33%;  /* adjust these percentage values */
+    transform: translate(-50%, -50%);  /* this will center the element based on its own size */
+}
+
+#coding {
+  font-size: small;
+  position:absolute;
+  top: 19%;
+  left: 46.5%;
+  transform: translate(-50%, -50%);
+}
+
+#resume {
+  position: absolute;
+  font-size: small;
+  top: 17%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+}
+
+#written {
+  position: absolute;
+  font-size: small;
+  top: 19%;
+  left: 58.5%;
+  transform: translate(-50%, -50%);
+}
+
+#video {
+  position: absolute;
+  font-size: small;
+  top: 23%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+}
+

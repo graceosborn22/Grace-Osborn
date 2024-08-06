@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visual/Design projects</title>
+  <link rel="stylesheet" type="text/css" href="DesignPageStyles.css">
+</head>
+<body>
+  <header>
+    <h1>Visual/Design Projects</h1>
+    <p>Click to enlarge projects</p>
+  </header>
+
+<main>
+    <section class="gallery">
+      <div class="photo">
+        <img src="HoneyLogo.png" alt="HoneyLogo">
+          <span class="close-btn">&times;</span>
+          <h2>Sand Castle Farm Honey Logo</h2>
+          <p>Logo design for Sand Castle Farms jars of honey. 2024.</p>
+          </a>
+      </div>
+      <div class="photo">
+        <img src="wt24poster.jpg" alt="Wrektacular">
+          <span class="close-btn">&times;</span>
+          <h2>Listen Better</h2>
+          <p>Promotional Poster for WREKTACULAR (Wrek Radio live music event). 2024.</p>
+          </a>
+      </div>
+      <div class="photo">
+        <video src="wrektacularpromo.mp4" alt="WrektacularPromo" controls width="100%" height="auto"></video>
+        <span class="close-btn">&times;</span>
+        <h2>WREKTACULAR Promotional Video</h2>
+        <p>Promotional Video for WREKTACULAR (Wrek Radio live music event). 2024.</p>
+      </div>
+      <div class="photo">
+        <a href="https://erato.gtorg.gatech.edu/2023-2024-edition/" target="_blank">
+          <img src="Erato.png" alt="Erato">
+        </a>
+          <span class="close-btn">&times;</span>
+          <h2>Parallels and Cycles: Erato 2024</h2>
+          <p>Georgia Tech's 2024 literary magazine. Spreads I designed: 16 & 17, 40 & 41, 52 & 53</p>
+          </a>
+      </div>
+        <div class="photo">
+          <img src="GraphicDesignPortfolioFinal.jpg" alt="Graphic Design Portfolio">
+            <span class="close-btn">&times;</span>
+            <h2>Graphic Design Final Portfolio</h2>
+            <p>Graphic design final portfolio featuring projects I made throughout the semester. 2021.</p>
+            </a>
+        </div>
+        <div class="photo">
+            <img src="albumcoverlayout.png" alt="Album Layout">
+            <span class="close-btn">&times;</span>
+            <h2>Album Redesign</h2>
+            <p>Album cover redesign class project. This is my rendidtion of Sad Heart by Mars Argo. 2021.</p>
+            </a>
+        </div>
+        <div class="photo">
+            <img src="wrekproject1.0v.jpg" alt="WREK Project">
+            <span class="close-btn">&times;</span>
+            <h2>WREK Project</h2>
+            <p>A Project for WREK Radio Design collective that features WREK's slogan "Music you don't hear on the radio." 2023.</p>
+            </a>
+        </div>
+        <div class="photo">
+          <img src="wrekologydraft.nowlanosborn.jpg" alt="WREK page">
+          <span class="close-btn">&times;</span>
+          <h2>WREK Zine Page</h2>
+          <p>My page I made with a partner to go in WREK Design Collective's zine. 2022.</p>
+          </a>
+      </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Grace Osborn. All rights reserved.</br><a href="index.html">back to home.</href>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var photos = document.querySelectorAll('.photo');
+
+      photos.forEach(function(photo) {
+          photo.addEventListener('click', function() {
+              photo.classList.toggle('fullscreen');
+          });
+      });
+
+      var closeButtons = document.querySelectorAll('.close-btn');
+
+      closeButtons.forEach(function(btn) {
+          btn.addEventListener('click', function(event) {
+              event.stopPropagation();
+              btn.parentElement.classList.remove('fullscreen');
+          });
+      });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    /*background-color: black;*/
+    color: antiquewhite;
+}
+
+body {
+    background-image: url('IMG_7044.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+h1{
+    font-size:50px;
+}
+/* Container for the title */
+.header-container {
+    display: flex;   
+    justify-content: space-between;  
+    align-items: center;  
+    position: relative;   
+    padding: 0 10%;  
+}
+
+/* Styles for "Coding" and "Projects" */
+.title-part {
+    font-size: 5em; 
+}
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100%;  
+    margin-top: -20vh;  
+}
+
+/* If you want to center the individual list items as well */
+ul {
+    text-align: center;
+    padding-left: 0; /* Removes the default padding from the list */
+    list-style-type: none; /* Removes the default bullets from the list */
+    margin-top: -20vh;  /* Adjust the value as per your requirement */
+}
+/* The background image between "Coding" and "Projects" */
+
+ul li {
+    padding: 50px 0;  /* 10px padding to the top and bottom of each list item */
+    color:antiquewhite;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+a:visited {
+    color: antiquewhite;
+}
+
+
+
+
+
+

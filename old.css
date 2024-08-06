@@ -1,0 +1,97 @@
+html {
+    background-image: url('photoofme.jpg');
+    background-size: cover;
+    text-align: center;
+    color:antiquewhite;
+    font-family: "Times New Roman", Georgia, serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #introParagraph {
+    /* Positioning */
+    position: absolute;
+    top: 550px;  /* y-axis */
+    left: 60px; /* x-axis */
+    /*z-index: 1; /* z-axis */
+  }
+  
+  #Name {
+    position: absolute;
+    top: 495px;  /* y-axis */
+    left: 100px; /* x-axis */
+    /*z-index: 1; /* z-axis */
+
+  }
+
+  #linkList{
+    position: static;
+    color:antiquewhite;
+    
+  }
+
+/* Remove default list styling */
+#vertical-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style each list item */
+  #vertical-nav li {
+    font-size: 13px;
+    margin-bottom: 5px; /* Optional: adds some space between the items */
+  }
+  
+  /* Style the links */
+  #vertical-nav a {
+    text-decoration: none;
+    color: antiquewhite;
+    /*background-color: #121212;*/
+    padding: 5px;
+    display: block; /* Makes the entire list item clickable */
+  }
+  
+  /* Add some hover effect */
+  #vertical-nav a:hover {
+    background-color: #000000;
+  }
+
+  #visual{
+    position: absolute;
+    top: 325px;
+    left: 410px;
+  }
+
+  #coding{
+    position: absolute;
+    top: auto;
+    left: auto;
+  }
+
+  #resume{
+    position: absolute;
+    top: 275px;
+    left: 210px;
+
+  }
+
+  #written{
+    position: absolute;
+    top: auto;
+    left: auto;
+  }
+
+  #video{
+    position:absolute;
+    top: auto;
+    left: auto;
+  }
+  

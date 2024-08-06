@@ -1,0 +1,89 @@
+/* Reset some basic elements */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #5c3c06;
+    background-color: #fdf6e3;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.photo {
+    background-color: #fbf0d9;
+    border: 1px solid #e8d8c3;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d2b48c;
+}
+
+.photo h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+
+.photo p {
+    font-style: italic;
+    color: #7a6a53;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    font-size: 0.8em;
+    background-color: #e8d8c3;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.photo a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Keeps the text color consistent with the rest of the .photo elements */
+}
+
+.photo a:hover, .photo a:focus {
+    text-decoration: underline; /* Adds an underline on hover for visual feedback */
+}
+
+#centeredText{
+    text-align: center;
+    margin-top: 10vw;
+}
+#sylviaExcerpt{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
