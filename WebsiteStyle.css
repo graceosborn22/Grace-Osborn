@@ -56,7 +56,7 @@ html, body {
   }
   
 #visual {
-    font-size: small;
+    font-size:1.1em; 
     position: absolute;
     top: 23%;  /* adjust these percentage values */
     left: 33%;  /* adjust these percentage values */
@@ -64,7 +64,7 @@ html, body {
 }
 
 #coding {
-  font-size: small;
+  font-size: 1.1em; 
   position:absolute;
   top: 19%;
   left: 46.5%;
@@ -73,7 +73,7 @@ html, body {
 
 #resume {
   position: absolute;
-  font-size: small;
+  font-size: 1.1em; 
   top: 17%;
   left: 16%;
   transform: translate(-50%, -50%);
@@ -81,7 +81,7 @@ html, body {
 
 #written {
   position: absolute;
-  font-size: small;
+  font-size: 1.1em; 
   top: 19%;
   left: 58.5%;
   transform: translate(-50%, -50%);
@@ -89,7 +89,7 @@ html, body {
 
 #video {
   position: absolute;
-  font-size: small;
+  font-size: 1.1em; 
   top: 23%;
   left: 74%;
   transform: translate(-50%, -50%);
