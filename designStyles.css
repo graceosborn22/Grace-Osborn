@@ -9,7 +9,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
     gap: 16px;
 }
 
@@ -22,7 +22,8 @@ body {
 
 .grid-item img {
     width: 100%; /* Let the image take the full width of its grid area */
-    height: auto;
+    height: 300px; /* Set a specific height for the image container */
+    object-fit: cover; /* Ensures that the image is cropped to fit without stretching */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
