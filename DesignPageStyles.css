@@ -86,40 +86,18 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Optional: Add padding to avoid content touching the edges */
 }
 
 .fullscreen img,
 .fullscreen video {
     max-width: 90%;
     max-height: 90%;
-    width: auto; /* Ensure the image/video scales while maintaining aspect ratio */
+    width: auto;
     height: auto;
-    object-fit: contain; /* Ensure the image/video is contained within the fullscreen area */
+    object-fit: contain; /* Adjusts the image to fit within the container without distortion */
     border-radius: 8px; /* Optional: Maintain a consistent border-radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
 }
-
-.fullscreen .close-btn {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    z-index: 10000; /* Ensure the close button is always on top */
-}
-
-
-.fullscreen video {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 .fullscreen .close-btn {
     display: block;
 }
@@ -151,3 +129,4 @@ footer {
     text-align: center;
     margin-top: 10vw;
 }
+
