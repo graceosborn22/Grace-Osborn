@@ -29,8 +29,11 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
     grid-gap: 20px;
+    justify-content: center; /* Centers the grid items */
+    margin: 0 auto; /* Centers the entire gallery container */
+    max-width: 1200px; /* Ensures the gallery does not exceed a certain width */
 }
 
 .photo {
@@ -40,11 +43,13 @@ main {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     position: relative;
     cursor: pointer;
+    width: 100%; /* Ensures each grid item takes up the full width of its column */
 }
 
 .photo img, .photo video {
     width: 100%;
-    height: auto;
+    height: 200px; /* Set a specific height */
+    object-fit: cover; /* Ensures that the image is cropped to fit without stretching */
     border: 1px solid #d2b48c;
     max-height: 200px;
 }
@@ -81,24 +86,43 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px; /* Optional: Add padding to avoid content touching the edges */
 }
 
-.fullscreen img {
+.fullscreen img,
+.fullscreen video {
     max-width: 90%;
     max-height: 90%;
+    width: auto; /* Ensure the image/video scales while maintaining aspect ratio */
+    height: auto;
+    object-fit: contain; /* Ensure the image/video is contained within the fullscreen area */
+    border-radius: 8px; /* Optional: Maintain a consistent border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
 }
 
+.fullscreen .close-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 10000; /* Ensure the close button is always on top */
+}
+
+
 .fullscreen video {
-    max-width: 100%;  /* Adjust this value to control the maximum width in fullscreen */
-    max-height: 100%; /* Adjust this value to control the maximum height in fullscreen */
-    width: auto;     /* Ensure width auto to maintain aspect ratio */
-    height: auto;    /* Ensure height auto to maintain aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .fullscreen .close-btn {
     display: block;
 }
-
 
 footer {
     text-align: center;
@@ -115,15 +139,15 @@ footer {
 }
 
 .photo a {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Keeps the text color consistent with the rest of the .photo elements */
+    text-decoration: none;
+    color: inherit;
 }
 
 .photo a:hover, .photo a:focus {
-    text-decoration: underline; /* Adds an underline on hover for visual feedback */
+    text-decoration: underline;
 }
 
-#centeredText{
+#centeredText {
     text-align: center;
     margin-top: 10vw;
 }
